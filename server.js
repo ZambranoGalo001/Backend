@@ -17,6 +17,7 @@ const usuariosRoutes = require('./routes/usuarios');
 //Usar rutas
 app.use('/api/auth', authRoutes)
 app.use('/api/usuarios', usuariosRoutes)
+ app.use('/api/pacientes', require('./routes/pacientes'));
 
 //Ruta de ejemplo
 app.get('/', (req, res) => {

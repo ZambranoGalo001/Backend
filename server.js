@@ -18,6 +18,7 @@ const router = require('./routes/auth');
 //Usar rutas
 app.use('/api/auth', authRoutes)
 app.use('/api/usuarios', usuariosRoutes)
+app.use('/api/especialidades', require('./routes/especialidades'));
  feature/modulo-usuarios
 app.use('/api/usuarios', require('routes/usuarios'));
  app.use('/api/pacientes', require('./routes/pacientes'));
